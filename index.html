@@ -1,666 +1,138 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Islamabad Pets World - Premium hand-raised parrots, Macaws, Cockatiels, scientific seed mixes, luxury cages, and accessories. Order directly on WhatsApp with safe delivery across Pakistan.">
-  <title>Islamabad Pets World | Premium Parrots & Accessories</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Islamabad Pets World</title>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- --- Header / Navbar --- -->
-  <header>
-    <div class="container nav-container">
-      <a href="#" class="logo" id="nav-logo-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.09 15.69c-.27.27-.63.41-.99.41s-.72-.14-.99-.41l-4.24-4.24c-.55-.55-.55-1.43 0-1.98.55-.55 1.43-.55 1.98 0L12 14.54l3.15-3.15c.55-.55 1.43-.55 1.98 0 .55.55.55 1.43 0 1.98l-4.04 4.32z"/>
-        </svg>
-        Islamabad Pets World
-      </a>
-      
-      <nav class="nav-links">
-        <a href="#" class="active" id="nav-home-btn">Home</a>
-        <a href="#catalog" id="nav-parrots-btn">Parrots</a>
-        <a href="#catalog" id="nav-acc-btn">Accessories & Supplies</a>
-        <a href="#care">Parrot Care</a>
-        <a href="#" id="nav-admin-btn">Admin Dashboard</a>
-      </nav>
+  <div style="padding:50px; text-align:center;">
 
-      <div class="nav-actions">
-        <!-- Theme Toggle -->
-        <button id="theme-toggle" class="btn-icon" title="Toggle Theme">
-          <!-- Dynamically inserted by JS -->
-        </button>
+    <h1>Islamabad Pets World</h1>
 
-        <!-- Cart Trigger -->
-        <button class="btn-icon" onclick="toggleCartDrawer(true)" title="View Cart">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
-            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
-          </svg>
-          <span id="cart-count-badge" class="cart-badge" style="display: none;">0</span>
-        </button>
+    <p>Premium Parrots & Accessories</p>
 
-        <!-- Primary Call to Action -->
-        <a href="https://wa.me/923435097981" target="_blank" id="header-whatsapp-link" class="btn-contact btn-icon-label">
-          WhatsApp Us
-        </a>
-      </div>
-    </div>
-  </header>
+    <br><br>
 
-  <!-- --- Hero Section --- -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-tag">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m12 3-1.912 5.886H3.886L8.8 12.518 6.89 18.4L12 14.773 17.11 18.4l-1.91-5.882 4.914-3.632h-6.202Z"/>
-          </svg>
-          Pakistan's Premium Parrot Portal
-        </div>
-        <h1>Discover Premium <span>Exotic Parrots</span> & Accessories</h1>
-        <p class="hero-description">
-          Welcome to Islamabad Pets World. We house healthy DNA-verified parrots, scientifically formulated nutritional blends, and hand-crafted accessories. Your companion's health and vitality is our top priority.
-        </p>
-        <div class="hero-actions">
-          <a href="#catalog" class="btn-primary">Shop Collection</a>
-          <a href="#care" class="btn-secondary">Care Guides</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-value">15+<span>+</span></span>
-            <span class="stat-label">Parrot Species</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">5k<span>+</span></span>
-            <span class="stat-label">Happy Owners</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">100%<span>%</span></span>
-            <span class="stat-label">Health Guarantee</span>
-          </div>
-        </div>
-      </div>
+    <form id="checkout-form">
 
-      <div class="hero-visual">
-        <div class="hero-image-wrapper">
-          <img src="assets/hero_banner.png" alt="Exotic Blue and Gold Macaw" onerror="this.src='https://placehold.co/600x600?text=Parrot+Palace'">
-        </div>
-        <!-- Floating Glass Badge -->
-        <div class="hero-badge">
-          <div class="hero-badge-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <div class="hero-badge-text">
-            <h4>Live DNA Verified</h4>
-            <p>100% certified healthy parrots</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <input type="text" id="customer-name" placeholder="Your Name" required
+        style="padding:12px; width:300px; margin:10px;"><br>
 
-  <!-- --- Quick Categories Section --- -->
-  <section class="categories-sec">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <h2>Browse Our <span>Specialties</span></h2>
-          <p>Carefully handpicked items tailored for parrot enthusiasts and expert breeders.</p>
-        </div>
-      </div>
-      
-      <div class="category-grid" style="grid-template-columns: repeat(2, 1fr);">
-        <!-- Parrots Category -->
-        <div class="category-card" id="cat-card-parrots">
-          <div class="category-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"/>
-              <circle cx="8" cy="12" r="2"/>
-            </svg>
-          </div>
-          <h3>Exotic Parrots</h3>
-          <p>Beautiful healthy Macaws, Cockatiels, Budgies, Ringnecks, and Lovebirds raised in premium sanitized breeding farms.</p>
-          <span class="category-link">
-            Explore Parrots 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </span>
-        </div>
+      <input type="text" id="customer-phone" placeholder="Phone Number" required
+        style="padding:12px; width:300px; margin:10px;"><br>
 
-        <!-- Accessories Category -->
-        <div class="category-card" id="cat-card-acc">
-          <div class="category-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-            </svg>
-          </div>
-          <h3>Accessories & Supplies</h3>
-          <p>Imported seed mixes, hand-feeding formulas, organic wood perches, luxury flight cages, and interactive swing toys.</p>
-          <span class="category-link">
-            Browse Accessories
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
+      <select id="customer-city" required
+        style="padding:12px; width:325px; margin:10px;">
 
-  <!-- --- Catalog Section --- -->
-  <section id="catalog" class="catalog-sec">
-    <div class="container">
-      <div class="section-header">
-        <div>
-          <h2>Our Premium <span>Catalog</span></h2>
-          <p>Search, filter, and order directly. Live birds include verified health certificate.</p>
-        </div>
-      </div>
+        <option value="">Select City</option>
+        <option value="Islamabad">Islamabad</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Rawalpindi">Rawalpindi</option>
 
-      <!-- Advanced Filter & Search System -->
-      <div class="filter-bar">
-        <div class="search-filter-row">
-          <!-- Search box -->
-          <div class="search-box">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
-            </svg>
-            <input type="text" id="catalog-search" placeholder="Search parrots, cages, seed mixes, toys...">
-          </div>
-          
-          <!-- Sorting Selection -->
-          <div class="sort-select-wrapper">
-            <select id="catalog-sort">
-              <option value="featured">Sort by: Featured</option>
-              <option value="price-low">Price: Low to High</option>
-              <option value="price-high">Price: High to Low</option>
-              <option value="name-asc">Name: A to Z</option>
-            </select>
-          </div>
-        </div>
+      </select><br>
 
-        <!-- Filter Category Pills -->
-        <div class="filter-pills">
-          <button class="filter-pill active" data-category="all">All Items</button>
-          <button class="filter-pill" data-category="parrots">Parrots Only</button>
-          <button class="filter-pill" data-category="accessories">Accessories & Supplies</button>
-        </div>
-      </div>
+      <textarea id="customer-address" placeholder="Address" required
+        style="padding:12px; width:300px; margin:10px;"></textarea><br>
 
-      <!-- Catalog Products Grid -->
-      <div id="products-grid" class="products-grid">
-        <!-- Rendered dynamically by app.js -->
-      </div>
-    </div>
-  </section>
+      <textarea id="customer-notes" placeholder="Order Notes"
+        style="padding:12px; width:300px; margin:10px;"></textarea><br>
 
-  <!-- --- ADMIN DASHBOARD SECTION --- -->
-  <section id="admin-section" class="admin-sec" style="display: none; padding: 100px 0 80px 0;">
-    <div class="container">
-      <div class="admin-header-row" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
-        <div>
-          <h2>Islamabad Pets World <span>Admin Panel</span></h2>
-          <p>Easily list, edit, or remove parrots, accessories, and supplies.</p>
-        </div>
-        <button id="admin-back-btn" class="btn-secondary">← Back to Store</button>
-      </div>
+      <button type="submit"
+        style="padding:14px 30px; background:green; color:white; border:none; border-radius:8px; cursor:pointer;">
 
-      <!-- Admin Stats Summary -->
-      <div class="admin-stats-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px;">
-        <div class="admin-stat-card" style="background-color: var(--bg-secondary); border: 1px solid var(--card-border); padding: 30px; border-radius: var(--radius-lg); text-align: center;">
-          <h4 style="font-size: 14px; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px;">Total Items</h4>
-          <span id="admin-stat-total" style="font-size: 36px; font-weight: 800; color: var(--accent);">0</span>
-        </div>
-        <div class="admin-stat-card" style="background-color: var(--bg-secondary); border: 1px solid var(--card-border); padding: 30px; border-radius: var(--radius-lg); text-align: center;">
-          <h4 style="font-size: 14px; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px;">Parrots</h4>
-          <span id="admin-stat-parrots" style="font-size: 36px; font-weight: 800; color: var(--accent);">0</span>
-        </div>
-        <div class="admin-stat-card" style="background-color: var(--bg-secondary); border: 1px solid var(--card-border); padding: 30px; border-radius: var(--radius-lg); text-align: center;">
-          <h4 style="font-size: 14px; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 8px;">Accessories & Supplies</h4>
-          <span id="admin-stat-accessories" style="font-size: 36px; font-weight: 800; color: var(--accent);">0</span>
-        </div>
-      </div>
+        Place Order
 
-      <!-- Admin Controls -->
-      <div class="admin-tabs" style="display: flex; gap: 16px; margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px;">
-        <button id="btn-tab-manage" class="admin-tab-btn active" style="font-size: 16px; font-weight: 600; padding: 10px 20px; border-radius: var(--radius-md); transition: all var(--transition-fast); color: var(--accent); background-color: var(--accent-light);">Manage Products</button>
-        <button id="btn-tab-add" class="admin-tab-btn" style="font-size: 16px; font-weight: 600; padding: 10px 20px; border-radius: var(--radius-md); transition: all var(--transition-fast); color: var(--text-secondary);">Add New Product</button>
-      </div>
-
-      <!-- Tab Content: Manage Products -->
-      <div id="admin-tab-manage-content" class="admin-tab-content">
-        <div class="admin-table-container" style="overflow-x: auto; background-color: var(--bg-secondary); border: 1px solid var(--card-border); border-radius: var(--radius-lg);">
-          <table class="admin-table" style="width: 100%; border-collapse: collapse; text-align: left;">
-            <thead>
-              <tr style="border-bottom: 1px solid var(--border-color); background-color: rgba(255,255,255,0.02);">
-                <th style="padding: 16px 24px; font-size: 14px; font-weight: 700; color: var(--text-secondary);">Image</th>
-                <th style="padding: 16px 24px; font-size: 14px; font-weight: 700; color: var(--text-secondary);">Product Name</th>
-                <th style="padding: 16px 24px; font-size: 14px; font-weight: 700; color: var(--text-secondary);">Category</th>
-                <th style="padding: 16px 24px; font-size: 14px; font-weight: 700; color: var(--text-secondary);">Price</th>
-                <th style="padding: 16px 24px; font-size: 14px; font-weight: 700; color: var(--text-secondary);">Badge</th>
-                <th style="padding: 16px 24px; font-size: 14px; font-weight: 700; color: var(--text-secondary);">Actions</th>
-              </tr>
-            </thead>
-            <tbody id="admin-products-list">
-              <!-- Dynamically populated via JS -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Tab Content: Add New Product -->
-      <div id="admin-tab-add-content" class="admin-tab-content" style="display: none;">
-        <div style="background-color: var(--bg-secondary); border: 1px solid var(--card-border); padding: 40px; border-radius: var(--radius-lg);">
-          <form id="admin-product-form" class="admin-form">
-            <input type="hidden" id="edit-product-id" value="">
-            <h3 id="admin-form-title" style="font-size: 22px; font-weight: 800; margin-bottom: 24px;">List a New Product / Parrot</h3>
-            
-            <div class="admin-form-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
-              <div class="form-group">
-                <label for="prod-name">Product Name *</label>
-                <input type="text" id="prod-name" placeholder="E.g. Lutino Cockatiel" required style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-              </div>
-              
-              <div class="form-group">
-                <label for="prod-category">Category *</label>
-                <select id="prod-category" required style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px; cursor:pointer;">
-                  <option value="parrots">Parrots</option>
-                  <option value="accessories">Accessories & Supplies</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="prod-price">Price (PKR) *</label>
-                <input type="number" id="prod-price" placeholder="E.g. 24000" required style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-              </div>
-
-              <div class="form-group">
-                <label for="prod-badge">Tag / Badge</label>
-                <input type="text" id="prod-badge" placeholder="E.g. Rare, Popular, Hand-Tamed" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-              </div>
-
-              <div class="form-group" style="grid-column: span 2;">
-                <label>Product Image *</label>
-                <!-- Hidden field stores final image value (base64 or path) -->
-                <input type="hidden" id="prod-image">
-
-                <!-- Upload Zone -->
-                <div id="img-upload-zone" onclick="document.getElementById('prod-image-file').click()" style="border: 2px dashed var(--border-color); border-radius: var(--radius-md); padding: 30px 20px; text-align: center; cursor: pointer; background-color: var(--bg-primary); transition: border-color var(--transition-fast), background-color var(--transition-fast); position: relative; overflow: hidden;">
-                  <!-- Preview image (shown after upload) -->
-                  <img id="prod-image-preview" src="" alt="Preview" style="display:none; width:100%; max-height:220px; object-fit:contain; border-radius: var(--radius-sm); margin-bottom: 12px;">
-                  <!-- Placeholder content (shown before upload) -->
-                  <div id="img-upload-placeholder">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 12px auto; display:block;">
-                      <rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
-                      <circle cx="9" cy="9" r="2"/>
-                      <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
-                    </svg>
-                    <p style="font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 6px;">Click to Upload Image</p>
-                    <p style="font-size: 13px; color: var(--text-secondary);">Or drag & drop here &bull; JPG, PNG, WEBP &bull; Max 10MB</p>
-                    <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">📱 On mobile: choose from Gallery or take a Camera photo</p>
-                  </div>
-                  <!-- Change image button overlay (shown after image is set) -->
-                  <button type="button" id="img-change-btn" onclick="event.stopPropagation(); document.getElementById('prod-image-file').click()" style="display:none; margin-top: 10px; background-color: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 6px 16px; border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; color: var(--text-primary); cursor: pointer;">🔄 Change Image</button>
-                </div>
-
-                <!-- Actual file input — hidden, triggered by clicking the zone -->
-                <input type="file" id="prod-image-file" accept="image/*" capture="environment" style="display: none;">
-
-                <!-- Presets Row -->
-                <div class="image-presets-row" style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
-                  <span style="font-size: 13px; color: var(--text-secondary); font-weight: 600;">Use stock image:</span>
-                  <button type="button" class="btn-preset-chip" onclick="setImgPreset('https://source.unsplash.com/featured/800x600/?scarlet-macaw,macaw')">🦜 Macaw</button>
-                  <button type="button" class="btn-preset-chip" onclick="setImgPreset('https://source.unsplash.com/featured/800x600/?budgie,parakeet')">🐦 Budgie</button>
-                  <button type="button" class="btn-preset-chip" onclick="setImgPreset('https://source.unsplash.com/featured/800x600/?cockatiel,parrot')">🐤 Cockatiel</button>
-                  <button type="button" class="btn-preset-chip" onclick="setImgPreset('https://source.unsplash.com/featured/800x600/?lovebird,parrot')">💚 Lovebirds</button>
-                  <button type="button" class="btn-preset-chip" onclick="setImgPreset('https://source.unsplash.com/featured/800x600/?bird-cage,aviary')">🏠 Cage</button>
-                  <button type="button" class="btn-preset-chip" onclick="setImgPreset('https://source.unsplash.com/featured/800x600/?bird-seed,feed')">🌾 Seed Mix</button>
-                  <button type="button" class="btn-preset-chip" onclick="setImgPreset('https://source.unsplash.com/featured/800x600/?bird-food,formulation')">🧪 Formula</button>
-                </div>
-              </div>
-
-              <div class="form-group" style="grid-column: span 2;">
-                <label for="prod-desc">Detailed Description *</label>
-                <textarea id="prod-desc" rows="4" placeholder="Describe the health, age, temperament of the bird, or technical specifications of accessories..." required style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px; font-family:inherit;"></textarea>
-              </div>
-            </div>
-
-            <!-- Specs fields specifically for Parrots -->
-            <div id="specs-parrot-block" class="specs-form-block" style="margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border-color);">
-              <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 16px; color: var(--accent);">Parrot Specifications</h4>
-              <div class="admin-form-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
-                <div class="form-group">
-                  <label for="spec-scientific">Scientific Name</label>
-                  <input type="text" id="spec-scientific" placeholder="E.g. Ara macao" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-                </div>
-                <div class="form-group">
-                  <label for="spec-age">Age / Development Stage</label>
-                  <input type="text" id="spec-age" placeholder="E.g. 14 Months" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-                </div>
-                <div class="form-group">
-                  <label for="spec-temperament">Temperament</label>
-                  <input type="text" id="spec-temperament" placeholder="E.g. Social, whistling, playful" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-                </div>
-                <div class="form-group">
-                  <label for="spec-lifespan">Lifespan</label>
-                  <input type="text" id="spec-lifespan" placeholder="E.g. 15-20 years" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-                </div>
-                <div class="form-group" style="grid-column: span 2;">
-                  <label for="spec-diet">Recommended Diet</label>
-                  <input type="text" id="spec-diet" placeholder="E.g. Mixed seed, daily fresh fruit & veggies" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-                </div>
-              </div>
-            </div>
-
-            <!-- Specs fields specifically for Accessories -->
-            <div id="specs-acc-block" class="specs-form-block" style="display: none; margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border-color);">
-              <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 16px; color: var(--accent);">Accessory Details</h4>
-              <div class="admin-form-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
-                <div class="form-group">
-                  <label for="spec-brand">Brand</label>
-                  <input type="text" id="spec-brand" placeholder="E.g. Versele-Laga" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-                </div>
-                <div class="form-group">
-                  <label for="spec-weight">Size / Weight</label>
-                  <input type="text" id="spec-weight" placeholder="E.g. 2.0 kg or 24x24x36 inches" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-                </div>
-                <div class="form-group">
-                  <label for="spec-benefits">Benefits</label>
-                  <input type="text" id="spec-benefits" placeholder="E.g. Plumage shine, digestion aid" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-                </div>
-                <div class="form-group">
-                  <label for="spec-origin">Country of Origin / Material</label>
-                  <input type="text" id="spec-origin" placeholder="E.g. Belgium or Natural Java Wood" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-                </div>
-                <div class="form-group" style="grid-column: span 2;">
-                  <label for="spec-expiry">Expiry date / Dimension specs</label>
-                  <input type="text" id="spec-expiry" placeholder="E.g. Dec 2027 or 0.5 inches wire spacing" style="width:100%; background-color:var(--bg-primary); border:1px solid var(--border-color); padding:12px 16px; border-radius:var(--radius-md); color:var(--text-primary); font-size:15px;">
-                </div>
-              </div>
-            </div>
-
-            <div style="margin-top: 30px; display: flex; gap: 16px;">
-              <button type="submit" id="btn-save-prod" class="btn-primary" style="flex-grow: 1;">Save Product</button>
-              <button type="button" id="btn-cancel-edit" class="btn-secondary" onclick="resetAdminForm()" style="display: none;">Cancel Edit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- Care Guidelines Section --- -->
-  <section id="care" class="care-sec">
-    <div class="container care-grid">
-      <div class="care-content">
-        <h2>Expert Avian <span>Care Guide</span> & Advisory</h2>
-        <p>Keeping a companion bird is a lifetime relationship. Follow our expert tips to keep them singing and physically fit at your home.</p>
-        
-        <div class="care-features">
-          <div class="care-feature-item">
-            <div class="care-feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-              </svg>
-            </div>
-            <div class="care-feature-text">
-              <h4>Cage Sizing & Spatial Needs</h4>
-              <p>Birds need plenty of wing extension room. A cage should be at least three times the wing-span of your bird.</p>
-            </div>
-          </div>
-
-          <div class="care-feature-item">
-            <div class="care-feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <div class="care-feature-text">
-              <h4>Diet Balance Formulation</h4>
-              <p>Never rely solely on seeds. Supply a healthy balance of premium pellets, fresh greens (kale, broccoli), and fresh water daily.</p>
-            </div>
-          </div>
-
-          <div class="care-feature-item">
-            <div class="care-feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-              </svg>
-            </div>
-            <div class="care-feature-text">
-              <h4>Mental Stimulation & Play</h4>
-              <p>Birds are highly cognitive creatures. Rotate wooden chew toys, swings, and foraging mirrors every 2-3 weeks to avoid depression.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Visual collage -->
-      <div class="care-visual">
-        <div class="care-visual-col">
-          <div class="care-card-img" style="aspect-ratio: 0.85;">
-            <img src="assets/care_1.png" alt="Healthy parrot eating fruit" onerror="this.src='https://placehold.co/300x350?text=Aviary+Care'">
-          </div>
-        </div>
-        <div class="care-visual-col">
-          <div class="care-card-img" style="aspect-ratio: 1.1;">
-            <img src="assets/care_2.png" alt="Modern cage inside room" onerror="this.src='https://placehold.co/300x270?text=Safe+Housing'">
-          </div>
-          <div class="care-card-img" style="aspect-ratio: 0.9;">
-            <img src="assets/care_3.png" alt="Young hand-fed chick" onerror="this.src='https://placehold.co/300x270?text=Lovebirds'">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- Footer --- -->
-  <footer>
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#" class="logo">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.09 15.69c-.27.27-.63.41-.99.41s-.72-.14-.99-.41l-4.24-4.24c-.55-.55-.55-1.43 0-1.98.55-.55 1.43-.55 1.98 0L12 14.54l3.15-3.15c.55-.55 1.43-.55 1.98 0 .55.55.55 1.43 0 1.98l-4.04 4.32z"/>
-          </svg>
-          Islamabad Pets World
-        </a>
-        <p>Sourcing premium-bred healthy parrots and top quality accessories and feeds for aviculturists and hobbyists across Pakistan. Safe delivery, air-conditioned transport, and certified medical profiles.</p>
-        <div class="footer-socials">
-          <a href="#" class="btn-icon">FB</a>
-          <a href="#" class="btn-icon">IG</a>
-          <a href="#" class="btn-icon">YT</a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>E-Commerce</h4>
-        <ul>
-          <li><a href="#catalog" onclick="filterCategory('parrots')">Exotic Parrots</a></li>
-          <li><a href="#catalog" onclick="filterCategory('accessories')">Premium Seed Mixtures</a></li>
-          <li><a href="#catalog" onclick="filterCategory('accessories')">Cages & Accessories</a></li>
-          <li><a href="#catalog" onclick="filterCategory('accessories')">Toys & Accessories</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Guides & Info</h4>
-        <ul>
-          <li><a href="#care">Parrot Care Guide</a></li>
-          <li><a href="#care">DNA Testing Service</a></li>
-          <li><a href="#">FAQ & Support</a></li>
-          <li><a href="#">Shipping Coverage</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Subscribe & News</h4>
-        <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">Receive latest aviculture newsletters, breeding warnings, and discounts.</p>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed to Newsletter!'); this.reset();">
-          <input type="email" placeholder="Your Email address" required>
-          <button type="submit">Join</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <p>&copy; 2026 Islamabad Pets World. All rights reserved.</p>
-      <p>Secure WhatsApp booking available across Pakistan.</p>
-    </div>
-  </footer>
-
-  <!-- --- SIDE DRAWER: Shopping Cart --- -->
-  <div id="cart-drawer-overlay" class="cart-overlay" onclick="toggleCartDrawer(false)">
-    <div class="cart-drawer" onclick="event.stopPropagation()">
-      <div class="cart-header">
-        <h3>
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
-            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
-          </svg>
-          Your Cart <span id="cart-count-text">(0)</span>
-        </h3>
-        <button class="cart-close" onclick="toggleCartDrawer(false)">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Cart Item Container -->
-      <div id="cart-drawer-items" class="cart-items">
-        <!-- Populated via JS -->
-      </div>
-
-      <!-- Drawer Footer -->
-      <div class="cart-footer">
-        <div class="cart-summary-row">
-          <span class="cart-summary-label">Subtotal</span>
-          <span id="cart-subtotal" class="cart-summary-value">Rs. 0</span>
-        </div>
-        <button class="btn-checkout" onclick="openCheckoutModal()">
-          Proceed to Order Invoice
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- --- MODAL: Product Detail View --- -->
-  <div id="product-detail-modal" class="modal-overlay" onclick="closeModal('product-detail-modal')">
-    <div class="modal-content" onclick="event.stopPropagation()">
-      <!-- Populated via JS -->
-    </div>
-  </div>
-
-  <!-- --- MODAL: Checkout / Shipping Details Form --- -->
-  <div id="checkout-modal" class="modal-overlay" onclick="closeModal('checkout-modal')">
-    <div class="modal-content checkout-modal-layout" onclick="event.stopPropagation()">
-      <button class="detail-modal-close" onclick="closeModal('checkout-modal')" title="Close">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
-        </svg>
       </button>
 
-      <div class="checkout-modal-header">
-        <h3>Booking / Shipping details</h3>
-      </div>
+    </form>
 
-      <form id="checkout-form" class="checkout-form">
-        <!-- Name -->
-        <div class="form-group">
-          <label for="customer-name">Full Name *</label>
-          <input type="text" id="customer-name" placeholder="E.g. Adil Shah" required>
-        </div>
-
-        <!-- Phone -->
-        <div class="form-group">
-          <label for="customer-phone">WhatsApp/Phone Number *</label>
-          <input type="tel" id="customer-phone" placeholder="E.g. 03001234567" required>
-        </div>
-
-        <!-- City (Select Box) -->
-        <div class="form-group">
-          <label for="customer-city">Shipping City *</label>
-          <select id="customer-city" required>
-            <option value="" disabled selected>Select your city</option>
-            <option value="Karachi">Karachi</option>
-            <option value="Lahore">Lahore</option>
-            <option value="Islamabad">Islamabad</option>
-            <option value="Rawalpindi">Rawalpindi</option>
-            <option value="Faisalabad">Faisalabad</option>
-            <option value="Multan">Multan</option>
-            <option value="Peshawar">Peshawar</option>
-            <option value="Quetta">Quetta</option>
-            <option value="Sialkot">Sialkot</option>
-            <option value="Gujranwala">Gujranwala</option>
-          </select>
-        </div>
-
-        <!-- Complete Address -->
-        <div class="form-group">
-          <label for="customer-address">Complete Delivery Address *</label>
-          <textarea id="customer-address" rows="3" placeholder="E.g. House #, Street #, Sector/Area..." required></textarea>
-        </div>
-
-        <!-- Comments / Special Instructions -->
-        <div class="form-group">
-          <label for="customer-notes">Order Notes / Custom Requests</label>
-          <textarea id="customer-notes" rows="2" placeholder="Any specific requirements (e.g. hand-tamed check, custom shipping time)"></textarea>
-        </div>
-
-        <!-- Totals summary block -->
-        <div id="checkout-totals-summary" class="checkout-totals">
-          <!-- Populated via JS -->
-        </div>
-
-        <button type="submit" class="btn-submit-order">
-          Generate Order Invoice
-        </button>
-      </form>
-    </div>
   </div>
 
-  <!-- --- MODAL: Success & Invoice Details (Checkout Confirm) --- -->
-  <div id="success-modal" class="modal-overlay">
-    <div class="modal-content success-modal-layout">
-      <div class="success-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"/>
-        </svg>
-      </div>
 
-      <h3>Invoice Generated!</h3>
-      <p>Your receipt has been generated successfully. Please click the button below to confirm the order directly on WhatsApp.</p>
+  <!-- Firebase -->
+  <script type="module">
 
-      <!-- Invoice Details Card -->
-      <div id="invoice-details" class="invoice-box">
-        <!-- Rendered dynamically by app.js -->
-      </div>
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
-      <div class="success-actions">
-        <!-- Green WhatsApp redirection button -->
-        <button id="btn-whatsapp-confirm" class="btn-whatsapp-confirm">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.977h.004c4.368 0 7.926-3.559 7.93-7.934A7.897 7.897 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.69-4.98c-.202-.1-.1.195-.19.07-.101-.007-.067-.188-.135-.24c-.213-.104-.374-.18-.63-.33-.2-.13-.324-.13-.442-.013c-.12.124-.507.645-.62.775-.113.13-.226.143-.428.043-.2-.1-.845-.311-1.61-1.002-.596-.537-.999-1.202-1.116-1.405-.117-.203-.012-.313.088-.413.09-.09.2-.234.3-.35.1-.117.133-.198.2-.33.067-.133.033-.25-.017-.35-.05-.1-.442-1.087-.607-1.493-.16-.395-.336-.34-.46-.346-.118-.006-.254-.007-.39-.007a.723.723 0 0 0-.524.247c-.18.2-.69.673-.69 1.642 0 .97.697 1.905.794 2.04.1.133 1.372 2.132 3.325 2.97.465.199.827.319 1.11.411.468.148.895.127 1.233.076.377-.058 1.16-.474 1.322-.93.16-.456.16-.848.112-.93-.047-.08-.175-.13-.377-.23z"/>
-          </svg>
-          Confirm & Complete on WhatsApp
-        </button>
-        <!-- Standard dialog dismissal -->
-        <button id="btn-success-close" class="btn-secondary">
-          Close Invoice
-        </button>
-      </div>
-    </div>
-  </div>
+    import {
+      getFirestore,
+      collection,
+      addDoc
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-  <!-- --- Toast Notification Container --- -->
-  <div id="toast-container" class="toast-container"></div>
+    // Firebase Config
+    const firebaseConfig = {
+      apiKey: "AIzaSyBFsH8RBsRhRxbrN2g9MMDkR1b0O1ZxYJI",
+      authDomain: "islamabadparrot-285bf.firebaseapp.com",
+      projectId: "islamabadparrot-285bf",
+      storageBucket: "islamabadparrot-285bf.firebasestorage.app",
+      messagingSenderId: "178142021195",
+      appId: "1:178142021195:web:e37fd8ae63cdf16fad6fce",
+      measurementId: "G-ZV2ZWME6DL"
+    };
 
-  <!-- App Script -->
-  <script src="app.js"></script>
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    // Firestore Database
+    const db = getFirestore(app);
+
+    // Save Order
+    async function saveOrder(orderData) {
+
+      try {
+
+        await addDoc(collection(db, "orders"), orderData);
+
+        alert("Order Saved Successfully!");
+
+      } catch (error) {
+
+        console.log(error);
+
+        alert("Error Saving Order");
+
+      }
+
+    }
+
+    // Form Submit
+    document.getElementById("checkout-form").addEventListener("submit", async function (e) {
+
+      e.preventDefault();
+
+      const orderData = {
+
+        customerName: document.getElementById("customer-name").value,
+
+        customerPhone: document.getElementById("customer-phone").value,
+
+        customerCity: document.getElementById("customer-city").value,
+
+        customerAddress: document.getElementById("customer-address").value,
+
+        customerNotes: document.getElementById("customer-notes").value,
+
+        orderTime: new Date()
+
+      };
+
+      await saveOrder(orderData);
+
+      document.getElementById("checkout-form").reset();
+
+    });
+
+  </script>
+
 </body>
+
 </html>
